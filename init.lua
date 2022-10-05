@@ -5,7 +5,7 @@ end
 
 for _, source in ipairs({
   "core",
-  "plugins"
+ "plugins"
 }) do
   local status_ok, fault = pcall(require, source)
   if not status_ok then

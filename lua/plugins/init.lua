@@ -1,4 +1,4 @@
-require("plugins.keymaps")
+require("plugins.custom-keymaps")
 local packer = require("core.utils").packer
 
 -- Install your plugins here
@@ -12,6 +12,14 @@ return packer.startup(function(use)
     config = function()
         require("plugins.treesitter")
     end})
+     use({ "p00f/nvim-ts-rainbow", after = { "nvim-treesitter" }, event = { "BufRead", "BufNewFile", "InsertEnter" } }) -- rainbow colors for syntax highlighting
+    use({ "andymass/vim-matchup", after = { "nvim-treesitter" }, event = { "BufRead", "BufNewFile", "InsertEnter" } })
+    -- git
+        use({"lewis6991/gitsigns.nvim", 
+    config = function()
+        require("plugins.gitsigns")
+    end}) 
+
     -- navigation
     use({"nvim-telescope/telescope.nvim",
     config = function()
