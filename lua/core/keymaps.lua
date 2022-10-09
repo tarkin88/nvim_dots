@@ -21,7 +21,7 @@ keymap("v", "p", '"_dP', opts)
 keymap("n", "U", "<C-r>", opts)
 
 -- For not yanking when deleting chars
-keymap('n', 'x', '"_x', opts)
+keymap("n", "x", '"_x', opts)
 
 -- Show/Unshow Relative line Numbers
 keymap("n", "<leader>z", "<CMD>set invrnu invnu<CR>", opts)
@@ -30,12 +30,11 @@ keymap("n", "<leader>so", "<CMD>so %<CR>", opts)
 keymap("n", "<CR>", "<CMD>noh<CR><CR>", opts)
 
 -- For copy in system clipboard
-keymap('v', '<C-c>', '"+y', opts)
+keymap("v", "<C-c>", '"+y', opts)
 
 -- For Easier Splitting of buffer
 keymap("n", "<leader>|", "<C-w>v", opts)
 keymap("n", "<leader>_", "<C-w>s", opts)
-
 
 -- Better window navigation
 keymap("n", "<C-h>", "<C-w>h", opts)
@@ -49,7 +48,6 @@ keymap("n", "<C-M-Down>", ":resize +2<CR>", opts)
 keymap("n", "<C-M-Left>", ":vertical resize -2<CR>", opts)
 keymap("n", "<C-M-Right>", ":vertical resize +2<CR>", opts)
 
-
 -- Clear highlights
 keymap("n", "<leader>h", "<cmd>nohlsearch<CR>", opts)
 
@@ -57,7 +55,6 @@ keymap("n", "<leader>h", "<cmd>nohlsearch<CR>", opts)
 keymap("n", "<A-Right>", "<CMD>bnext<CR>", opts)
 keymap("n", "<A-Left>", "<CMD>bprevious<CR>", opts)
 keymap("n", "<A-Down>", "<CMD>bdelete<CR>", opts)
-
 
 -- Insert --
 -- Better Navigation in insert mode
