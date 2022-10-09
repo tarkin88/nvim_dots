@@ -1,0 +1,6 @@
+require("mini.align").setup()
+require("mini.bufremove").setup()
+require("mini.comment").setup()
+require("mini.cursorword").setup()
+require("mini.sessions").setup({ autowrite = true })
+require("mini.trailspace").setup()
